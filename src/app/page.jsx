@@ -5,9 +5,11 @@ import Image from "next/image";
 
 export default function page() {
   return (
-    <div className="max-w-[1050px] md:pt-[90px] pt-[30px] mx-auto flex flex-wrap  justify-center">
-      <LoginPage />
-      <FormImg />
+    <div className="w-full h-auto md:h-[100vh] flex flex-wrap items-center ">
+      <div className="max-w-[1050px]  pt-[30px] md:pt-0 mx-auto flex flex-wrap  justify-center">
+        <LoginPage />
+        <FormImg />
+      </div>
     </div>
   );
 }

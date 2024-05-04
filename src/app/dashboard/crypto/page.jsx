@@ -23,7 +23,7 @@ export default function page() {
     fetchdata();
   }, []);
   return (
-    <div className="ps-[0px] md:ps-[230px] dark:text-white">
+    <div className="ps-[0px] md:ps-[230px] dark:text-white mx-auto  w-full bg-[#181821]">
       <div className=" w-full flex flex-wrap overflow-x-hidden px-4 md:px-10">
         <SecTop crypto={crypto} />
         <SecBottom crypto={crypto} />
@@ -34,7 +34,7 @@ export default function page() {
 
 function SecTop({ crypto }) {
   return (
-    <div className="w-full flex my-8 flex-wrap px-4 lg:px-0">
+    <div className="w-full flex my-12 flex-wrap px-4 lg:px-0">
       {crypto &&
         crypto.map((item) => {
           return (
@@ -72,7 +72,7 @@ function SecTop({ crypto }) {
 
 function SecBottom({ crypto }) {
   return (
-    <div className="w-full flex flex-wrap mt-3 mb-10">
+    <div className="w-full flex flex-wrap mt-3 mb-20">
       <SecBottomF crypto={crypto} />
       <SecBottomSec crypto={crypto} />
       <SecBottomTH />

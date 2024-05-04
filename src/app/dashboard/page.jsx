@@ -28,7 +28,7 @@ export default function Page() {
   }, []);
 
   return (
-    <div className="ps-[0px] md:ps-[230px] dark:text-white">
+    <div className=" ps-[0px] md:ps-[230px] dark:text-white  w-full mx-auto bg-[#181821]">
       <div className=" w-full flex flex-wrap overflow-x-hidden px-4 md:px-10">
         <div className="w-full lg:w-1/2 justify-center flex ">
           <BarsDataset />
